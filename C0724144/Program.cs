@@ -15,13 +15,24 @@ namespace C0724144
             StudentInformation _Mark = new StudentInformation("Mark",0.2, 3);
             StudentInformation _Steve = new StudentInformation("Steve",2.9, 16);
             StudentInformation _Cindy = new StudentInformation("Cindy",2.8, 18);
+            var StudentList = new List<StudentInformation>();
+            StudentList.Add(_Mary);
+            StudentList.Add(_John);
+            StudentList.Add(_Mark);
+            StudentList.Add(_Steve);
+            StudentList.Add(_Cindy);
+
+            foreach (var student in StudentList)
+            {
+                Console.WriteLine(student.name);
+
+            }
             Console.ReadLine();
         }
     }
 
     class StudentInformation
     {
-
         public string name;
         public double GPA;
         public int attend;
@@ -32,7 +43,16 @@ namespace C0724144
             GPA = aGPA;
             attend = aattend;
         }
-       
-
     }
+    
+
+    class StudentList
+    { 
+        public void CICS()
+        {
+
+        }
+    }
+
+
 }
